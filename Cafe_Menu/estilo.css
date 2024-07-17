@@ -19,7 +19,7 @@ h2
     text-align: center;
 }
 p{
-    text-align: end;
+    text-align: center;
 }
 
 h1 {
@@ -32,11 +32,16 @@ h2 {
     font-size: 30px;
 
 }
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
 img{
-    display: block;
+
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25px;
+
 }
 
 .menu {
@@ -67,6 +72,10 @@ hr {
 .price {
     text-align: right;
     width: 25%;
+}
+
+.item{
+    display: flex;
 }
 
 .item p {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,38 @@
     </p>
     <form method="post" action="#">
         <fieldset>
-            <label for="primeiro nome">Digite seu primeiro nome: <input required id="primeiro nome" type="text"></label>
-            <label for="sobrenome">Digite seu sobrenome: <input required id="sobrenome" type="text"></label>
-            <label for="e-mail">Digite seu e-mail: <input required id="e-mail" type="email"></label>
-            <label for="senha">Crie uma nova senha: <input required id="senha" type="password" minlength="8"></label>
+            <label for="primeiro nome">Digite seu primeiro nome: <input required id="primeiro nome" type="text" name="primeiro nome"></label>
+            <label for="sobrenome">Digite seu sobrenome: <input required id="sobrenome" type="text" name="sobrenome"></label>
+            <label for="email">Digite seu e-mail: <input required id="email" type="email" name="email"></label>
+            <label for="senha">Crie uma nova senha: <input required id="senha" type="password"
+                    pattern="[a-z0-5]{8,}" name="senha"></label>
         </fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <legend>Tipo de conta (obrigatório)</legend>
+            <label for="conta-pessoal"> <input id="conta-pessoal" type="radio" name="account-type" class="inline" checked> conta
+                pessoal </label>
+            <label for="conta-comercial"> <input id="conta-comercial" type="radio" name="account-type" class="inline"> conta comercial
+            </label>
+        </fieldset>
+        <fieldset>
+
+            <label for="profile-picture"> Carregue uma foto de perfil:<input id="profile-picture" type="file"> </label>
+            <label for="age">Insira sua idade (anos): <input id="age" type="number" min="13" max="120"> </label>
+            <label for="bio">Forneça uma biografia: <textarea name="bio" id="bio" rows="3" cols="30" placeholder="Eu gosto de programar na praia..." class="placeholder"> </textarea></label>
+        </fieldset>
+
+        <label for="Termos e Condições"><input id="Termos e Condições" required type="checkbox" class="inline"> Aceito os <a
+                href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">Termos e Condições</a> </label>
+        <label for="referrer">
+            Como ficou sabendo de nós?
+            <select name="referrer" id="referrer">
+                <option value="">(selecione um)</option>
+                <option value="1">freeCodeCamp Notícias</option>
+                <option value="2">Canal gratuito do CodeCamp no YouTube</option>
+                <option value="3">Fórum freeCodeCamp</option>
+                <option value="4">Outro</option>
+            </select>
+        </label>
         <input type="submit" value="Eviar">
     </form>
 </body>

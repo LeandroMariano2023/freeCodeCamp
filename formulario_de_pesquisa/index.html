@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Formulario de Pesquisa</h1>
+    <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="primeiro nome">Digite seu primeiro nome: <input required id="name" type="text"
+                    name="primeiro nome" placeholder="nome"></label>
+
+            <label for="sobrenome">Digite seu sobrenome: <input required id="sobrenome" type="text"
+                    name="sobrenome" placeholder="sobrenome"></label>
+
+            <label id="email-label" for="email">Digite seu e-mail: <input required id="email" type="email"
+                    name="email" placeholder="email"></label>
+
+            <label for="senha">Crie uma nova senha: <input required id="senha" type="password" pattern="[a-z0-5]{8,}"
+                    name="senha" placeholder="senha"></label>
+
+            <label id="number-label" for="age">Insira sua idade (anos): <input id="number" type="number" min="13"
+                    max="120" placeholder="idade"> </label>
+        </fieldset>
+        <fieldset>
+            <legend>Você recomendaria nos para um amigo?</legend>
+
+            <label for="Definitivamente"> <input id="Definitivamente" type="radio" name="account-type" class="inline" value="sim" checked> Definitivamente </label>
+
+            <label for="Talvez"> <input id="Talvez" type="radio" name="account-type" class="inline" value="talvez"> Talvez
+            </label>
+
+            <label for="Não tem certeza"> <input id="Não tem certeza" type="radio" name="account-type" class="inline" value="nao"> Não tem certeza
+            </label>
+        </fieldset>
+        <label for="dropdown">
+            Como ficou sabendo de nós?
+            <select name="dropdown" id="dropdown">
+                <option value="">(selecione um)</option>
+                <option value="1"> Notícias</option>
+                <option value="2"> YouTube</option>
+                <option value="3">Fórum </option>
+                <option value="4">Outro</option>
+            </select>
+        </label>
+        <legend>O que você gostaria de ver melhorado? (Marque todas as que se aplicam)</legend>
+        <label for=""><input id="" required type="checkbox" class="inline" value="checkbox"> Vídeos</label>
+
+        <label for="wiki"><input id="" required type="checkbox" class="inline" value="checkbox"> Wiki</label>
+
+        <label for=""><input id="" required type="checkbox" class="inline" value="checkbox"> Fórum</label>
+   
+        <fieldset>
+            <label for="comentario"> Algum comentário ou sugestão? <textarea name="bio" id="bio" rows="3" cols="30" placeholder="comentário ou sugestão?"> </textarea></label>
+        </fieldset>
+        <input type="submit" value="Eviar">
+    </form>
+</body>
+
+</html>

@@ -22,3 +22,7 @@ h1{
     color: #f1be32;
     font-size:min(5vw, 1.2em) ;
 }
+
+ul li{
+    list-style: disc;
+}

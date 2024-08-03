@@ -1,0 +1,8 @@
+#div-img{
+    display: flex;
+}
+
+#image{
+    display: block;
+max-width: 100%;
+}

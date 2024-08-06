@@ -125,20 +125,30 @@ td.current {
     font-style: italic;
 }
 
-tr.data{
+tr.data {
     background: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
 }
 
-tr.data th{
-    padding: 0.3rem 0 ;
+tr.data th {
+    padding: 0.3rem 0;
     text-align: left;
-    padding-left:0.5rem;
+    padding-left: 0.5rem;
 }
 
-tr.data th .description{
+tr.data th .description {
     display: block;
     font-style: italic;
     font-weight: normal;
     padding: 1rem 0 0.75rem;
-    margin:0  -13.5rem 0 0;
+    margin: 0 -13.5rem 0 0;
+}
+
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type{
+    padding: 0 0.5rem 0 0;
 }
